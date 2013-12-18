@@ -24,7 +24,11 @@
   //   "default_popup": "html/lol.html"
   // },
 
-  "permissions": [ "*://*/*", "contextMenus" ],
+  "permissions": [
+    "*://*/*",
+    "contextMenus",
+    "activeTab"
+  ],
 
   "background": {
     // Load context menu

@@ -15,7 +15,7 @@
   });
 
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    return console.log(request, sender, sendResponse);
+    return console.log(request.url);
   });
 
 }).call(this);

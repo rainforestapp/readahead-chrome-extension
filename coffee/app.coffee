@@ -16,8 +16,6 @@ App.IndexRoute = Ember.Route.extend
   # send it to server
     # trigger banner render on success / fail
 
-# 
 # Add message listener to trigger ember stuff
-# 
 chrome.runtime.onMessage.addListener (request, sender, sendResponse) ->
-  console.log request, sender, sendResponse
+  console.log request.url

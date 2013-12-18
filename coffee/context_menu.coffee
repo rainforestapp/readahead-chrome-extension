@@ -1,15 +1,12 @@
-onClick = ->
-  console.log 'sending message', chrome
-  # chrome.runtime.sendMessage greeting: "hello"
-  chrome.tabs.query {}, (tabs) ->
-    message = greeting: "hello"
-    i = 0
-
-    while i < tabs.length
-      chrome.tabs.sendMessage tabs[i].id, message
-      ++i
-
+sendMessage = (tabId, url) ->
+  chrome.tabs.sendMessage tabId, url: url
 
 chrome.contextMenus.create
-  title: "Add to my readahead list"
-  onclick: onClick
+  title: "Add this page to readahead"
+  contexts: ["page"]
+  onclick: (info, tab) -> sendMessage tab.id, tab.url
+
+chrome.contextMenus.create
+  title: "Add this link to readahead"
+  onclick: (info, tab) -> sendMessage tab.id, info.linkUrl
+  contexts: ["link"]
