@@ -1,0 +1,2 @@
+ember-chrome-extension-boilerplate
+==================================
