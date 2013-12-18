@@ -17,3 +17,4 @@ Hai.
 ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░ 
 ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░ 
 ```
+To compile coffeescript: ``coffee -o js/ -cw coffee/``
