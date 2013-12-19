@@ -10,7 +10,7 @@
   },
 
   "commands": {
-    "show-list": {
+    "list:show": {
       "suggested_key":  {
         "default": "Alt+Shift+A",
         "mac": "Alt+Shift+A"
@@ -38,9 +38,11 @@
   "background": {
     // Load context menu
     "scripts": [
-        "js/libs/jquery-1.10.2.js",
-        "js/context_menu.js",
-        "js/browser_action.js"]
+      "js/models/link.js"
+      "js/libs/jquery-1.10.2.js"
+      "js/context_menu.js"
+      "js/browser_action.js"
+    ]
   },
 
   "content_scripts": [{
