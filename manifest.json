@@ -28,7 +28,7 @@
 
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["js/libs/jquery-1.10.2.js", "js/libs/handlebars-1.1.2.js", "js/libs/ember-1.2.0.js", "js/app.js"]
+    "js": ["js/libs/jquery-1.10.2.js", "js/app.js"]
   }],
 
   // Securitiez!
