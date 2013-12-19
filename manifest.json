@@ -27,7 +27,7 @@
 
   "background": {
     // Load context menu
-    "scripts": ["js/context_menu.js", "js/browser_action.js"]
+    "scripts": ["js/libs/jquery-1.10.2.js", "js/context_menu.js", "js/browser_action.js"]
   },
 
   "content_scripts": [{
