@@ -24,6 +24,7 @@
     "activeTab"
   ],
 
+
   "background": {
     // Load context menu
     "scripts": ["js/context_menu.js", "js/browser_action.js"]
