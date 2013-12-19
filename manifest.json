@@ -5,6 +5,10 @@
   "version": "1.0",
   "manifest_version": 2,
 
+  "browser_action": {
+    "default_title": "Readahead"
+  },
+
   //recommended
   "description": "Chrome extension description written here.",
   "icons": {
@@ -23,7 +27,7 @@
 
   "background": {
     // Load context menu
-    "scripts": ["js/context_menu.js"]
+    "scripts": ["js/context_menu.js", "js/browser_action.js"]
   },
 
   "content_scripts": [{
