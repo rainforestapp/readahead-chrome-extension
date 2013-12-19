@@ -9,6 +9,16 @@
     "default_title": "Readahead"
   },
 
+  "commands": {
+    "show-list": {
+      "suggested_key":  {
+        "default": "Alt+Shift+A",
+        "mac": "Alt+Shift+A"
+      },
+      "description": "Shows the next unread item in the list"
+    }
+  },
+
   //recommended
   "description": "Chrome extension description written here.",
   "icons": {
@@ -27,7 +37,7 @@
 
   "background": {
     // Load context menu
-    "scripts": ["js/context_menu.js", "js/browser_action.js"]
+    "scripts": ["js/browser_action.js", "js/commands.js", "js/context_menu.js"]
   },
 
   "content_scripts": [{
