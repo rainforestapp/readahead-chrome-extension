@@ -4,7 +4,6 @@ class @Link
       url: "http://readahead.herokuapp.com/links.json"
       dataType: "json"
       success: (data) ->
-        console.log data
         chrome.tabs.query
           active: true
           currentWindow: true
