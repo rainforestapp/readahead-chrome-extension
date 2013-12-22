@@ -38,9 +38,9 @@
   "background": {
     // Load context menu
     "scripts": [
-      "js/models/link.js"
-      "js/libs/jquery-1.10.2.js"
-      "js/context_menu.js"
+      "js/models/link.js",
+      "js/libs/jquery-1.10.2.js",
+      "js/context_menu.js",
       "js/browser_action.js"
     ]
   },
